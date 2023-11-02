@@ -1,0 +1,77 @@
+@use "variables";
+
+// section N2
+
+#trends {
+  min-height: 100vh;
+  padding: 40px 24px;
+  background-color: variables.$light-gray;
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+    div {
+      // repeats
+      svg {
+        fill: #9797a098;
+      }
+      svg:hover,
+      svg:focus {
+        transition: 0.2s ease-in;
+        cursor: pointer;
+        fill: black;
+      }
+      svg:nth-of-type(2) {
+        transform: rotate(180deg);
+        margin-left: 32px;
+      }
+    }
+  }
+
+  h2 {
+    color: black;
+    margin-bottom: 40px;
+  }
+  .card {
+    margin-top: 40px;
+    border-radius: 5px;
+    border: none;
+    height: 308px;
+    img {
+      height: 50%;
+    }
+    .container {
+      padding: 0 24px;
+
+      h4 {
+        font-size: 16px;
+        margin-top: 34px;
+      }
+      p {
+        height: 20px;
+        font-size: 13px;
+        color: variables.$dark-gray;
+        margin-top: 10px;
+        //repeat
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: wrap;
+        cursor: pointer;
+
+        transition: max-width 0.2s;
+        &:hover,
+        &:focus {
+          max-width: none;
+          height: fit-content;
+        }
+      }
+      span {
+        font-size: 13px;
+        color: variables.$dark-gray;
+      }
+    }
+  }
+  .card-1 {
+    display: none;
+  }
+}

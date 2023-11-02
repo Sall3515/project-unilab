@@ -1,0 +1,67 @@
+// header
+@use "variables";
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 44px;
+
+  .header-items-1 {
+    padding-left: 17px;
+    align-self: center;
+    cursor: pointer;
+  }
+  .header-items-2 {
+    align-self: center;
+  }
+  .header-items-3 {
+    padding-right: 17px;
+    align-self: center;
+  }
+
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+  }
+  .active {
+    display: block;
+  }
+
+  nav {
+    position: fixed;
+    height: 100vh;
+    width: 287px;
+    z-index: 3;
+    background-color: variables.$light-gray;
+    padding: 38px 40px;
+    box-shadow: 5px 0px 40px 5px rgba(122, 120, 120, 0.518);
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      p {
+        color: variables.$light-pink;
+        font-family: variables.$font;
+        font-weight: 600;
+      }
+    }
+    ul {
+      list-style: none;
+      margin-top: 87px;
+      li {
+        margin-bottom: 34px;
+        a {
+          text-decoration: none;
+          color: variables.$black;
+        }
+        img {
+          margin-right: 30px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+.toggle-menu {
+  display: none;
+}

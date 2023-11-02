@@ -1,77 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: "Noto Sans", sans-serif;
-}
-
-body {
-  min-height: 100vh;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  height: 44px;
-}
-header .header-items-1 {
-  padding-left: 17px;
-  align-self: center;
-  cursor: pointer;
-}
-header .header-items-2 {
-  align-self: center;
-}
-header .header-items-3 {
-  padding-right: 17px;
-  align-self: center;
-}
-header .menu-icon {
-  display: none;
-  cursor: pointer;
-}
-header .active {
-  display: block;
-}
-header nav {
-  position: fixed;
-  height: 100vh;
-  width: 287px;
-  z-index: 3;
-  background-color: #f6f8f9;
-  padding: 38px 40px;
-  box-shadow: 5px 0px 40px 5px rgba(122, 120, 120, 0.518);
-}
-header nav div {
-  display: flex;
-  justify-content: space-between;
-}
-header nav div p {
-  color: #fa6980;
-  font-family: "Noto Sans", sans-serif;
-  font-weight: 600;
-}
-header nav ul {
-  list-style: none;
-  margin-top: 87px;
-}
-header nav ul li {
-  margin-bottom: 34px;
-}
-header nav ul li a {
-  text-decoration: none;
-  color: #202124;
-}
-header nav ul li img {
-  margin-right: 30px;
-  font-size: 20px;
-}
-
-.toggle-menu {
-  display: none;
-}
-
 #hero-section .hero-image {
   position: relative;
   color: #ffffff;
@@ -253,6 +180,79 @@ header nav ul li img {
 }
 #trends .card-1 {
   display: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 44px;
+}
+header .header-items-1 {
+  padding-left: 17px;
+  align-self: center;
+  cursor: pointer;
+}
+header .header-items-2 {
+  align-self: center;
+}
+header .header-items-3 {
+  padding-right: 17px;
+  align-self: center;
+}
+header .menu-icon {
+  display: none;
+  cursor: pointer;
+}
+header .active {
+  display: block;
+}
+header nav {
+  position: fixed;
+  height: 100vh;
+  width: 287px;
+  z-index: 3;
+  background-color: #f6f8f9;
+  padding: 38px 40px;
+  box-shadow: 5px 0px 40px 5px rgba(122, 120, 120, 0.518);
+}
+header nav div {
+  display: flex;
+  justify-content: space-between;
+}
+header nav div p {
+  color: #fa6980;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+}
+header nav ul {
+  list-style: none;
+  margin-top: 87px;
+}
+header nav ul li {
+  margin-bottom: 34px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #202124;
+}
+header nav ul li img {
+  margin-right: 30px;
+  font-size: 20px;
+}
+
+.toggle-menu {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+
+body {
+  min-height: 100vh;
 }
 
 /*# sourceMappingURL=style.css.map */
