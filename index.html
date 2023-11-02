@@ -29,11 +29,14 @@
             </div>
 
             <ul>
-                <li><img src="./design/icons/home.png">HOME</li>
-                <li><img src="./design/icons/discover.png">DISCOVERY</li>
-                <li><img src="./design/icons/photos.png">PHOTOS</li>
-                <li><img src="./design/icons/mail.png">CONTACTS</li>
-                <li><img src="./design/icons/christopher-campbell-28567-unsplash.png">PROFILE</li>
+                <li class="close"><img src="./design/icons/home.png"><a href="./index.html">HOME</a>
+                </li>
+                <li><img src="./design/icons/discover.png"> <a href="./index.html">DISCOVERY</a></li>
+                <li><img src="./design/icons/photos.png"> <a href="./index.html">PHOTOS</a></li>
+                <li><img src="./design/icons/mail.png"> <a href="./index.html">CONTACTS</a></li>
+                <li><img src="./design/icons/christopher-campbell-28567-unsplash.png">
+                    <a href="./index.html">PROFILE</a>
+                </li>
             </ul>
 
         </nav>
@@ -90,7 +93,10 @@
 
         </div>
     </section>
-    <section id="trends"></section>
+    <section id="trends">
+
+
+    </section>
     <section id="news"></section>
 
     <footer>
@@ -104,6 +110,53 @@
 
 
     <script src="./app.js"></script>
+    <script src="./data.js"></script>
+    <script>
+        let card = "";
+        const cardContainer = document.getElementById("trends");
+        card = `
+        <h2>TRENDING</h2>
+            <div>
+                <svg class="back" xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10">
+                    <g id="arrow_back" data-name="arrow back" opacity="0.9">
+                        <path id="arrow_back-2" data-name="arrow back"
+                            d="M5,6a.908.908,0,0,1-.7-.3l-4-4A.967.967,0,0,1,.3.3.967.967,0,0,1,1.7.3L5,3.6,8.3.3A.967.967,0,0,1,9.7.3a.967.967,0,0,1,0,1.4l-4,4A.908.908,0,0,1,5,6Z"
+                            transform="translate(6) rotate(90)" />
+                    </g>
+                </svg>
+                <svg class="front" xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10">
+                    <g id="arrow_back" data-name="arrow back" opacity="0.9">
+                        <path id="arrow_back-2" data-name="arrow back"
+                            d="M5,6a.908.908,0,0,1-.7-.3l-4-4A.967.967,0,0,1,.3.3.967.967,0,0,1,1.7.3L5,3.6,8.3.3A.967.967,0,0,1,9.7.3a.967.967,0,0,1,0,1.4l-4,4A.908.908,0,0,1,5,6Z"
+                            transform="translate(6) rotate(90)" />
+                    </g>
+                </svg>
+            </div>
+        <div class="card">
+            <img src="./design/cards/${cardData[0].image}" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4>${cardData[0].title}</b></h4>
+                    <p>${cardData[0].description}</p>
+                </div>
+        </div>
+        <div class="card">
+            <img src="./design/cards/${cardData[1].image}" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4><b>${cardData[1].title}</b></h4>
+                    <p>${cardData[1].description}</p>
+                </div>
+        </div>
+        <div class="card card-1">
+            <img src="./design/cards/${cardData[2].image}" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4><b>${cardData[2].title}</b></h4>
+                    <p>${cardData[2].description}</p>
+                </div>
+        </div>
+        `
+        cardContainer.innerHTML = card;
+
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>

@@ -35,7 +35,7 @@ header .active {
   display: block;
 }
 header nav {
-  position: absolute;
+  position: fixed;
   height: 100vh;
   width: 287px;
   z-index: 3;
@@ -58,6 +58,10 @@ header nav ul {
 }
 header nav ul li {
   margin-bottom: 34px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #202124;
 }
 header nav ul li img {
   margin-right: 30px;
@@ -186,7 +190,18 @@ header nav ul li img {
 }
 
 #trends {
-  height: 100vh;
+  min-height: 100vh;
+  padding: 0 24px;
+}
+#trends h2 {
+  color: black;
+  margin-bottom: 40px;
+}
+#trends .card {
+  margin-top: 40px;
+}
+#trends .card-1 {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
