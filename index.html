@@ -80,13 +80,13 @@
                     <h3>TRAVEL</h3>
                     <h4>Article Title</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                    <span class="time-check"><img src="./design/icons/Path 5.png">2m ago</span>
+                    <span class="time-check"><img src="./design/icons/Path-5.png">2m ago</span>
                 </div>
                 <div class="article">
                     <h3>TECHNOLOGY</h3>
                     <h4>Article Title</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                    <span class="time"><img src="./design/icons/Path 5.png">1h ago</span>
+                    <span class="time"><img src="./design/icons/Path-5.png">1h ago</span>
                 </div>
 
             </div>
@@ -115,7 +115,8 @@
         let card = "";
         const cardContainer = document.getElementById("trends");
         card = `
-        <h2>TRENDING</h2>
+       <div class="heading">
+          <h2>TRENDING</h2>
             <div>
                 <svg class="back" xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10">
                     <g id="arrow_back" data-name="arrow back" opacity="0.9">
@@ -132,11 +133,16 @@
                     </g>
                 </svg>
             </div>
+        </div>
+
+        
         <div class="card">
             <img src="./design/cards/${cardData[0].image}" alt="Avatar" style="width:100%">
                 <div class="container">
                     <h4>${cardData[0].title}</b></h4>
                     <p>${cardData[0].description}</p>
+                    <span class="time">1h ago</span>
+                
                 </div>
         </div>
         <div class="card">
@@ -144,6 +150,8 @@
                 <div class="container">
                     <h4><b>${cardData[1].title}</b></h4>
                     <p>${cardData[1].description}</p>
+                    <span class="time">1h ago</span>
+            
                 </div>
         </div>
         <div class="card card-1">
@@ -151,6 +159,8 @@
                 <div class="container">
                     <h4><b>${cardData[2].title}</b></h4>
                     <p>${cardData[2].description}</p>
+                    <span class="time"><img src="./design/icons/Path-5.png">2h ago</span>
+                
                 </div>
         </div>
         `

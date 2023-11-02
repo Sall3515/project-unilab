@@ -14,7 +14,7 @@ const cardData = [
     id: 2,
   },
   {
-    image: "umbrela.ong",
+    image: "umbrela.png",
     title: "Morbi eleifend a libero",
     description:
       "Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat.",
