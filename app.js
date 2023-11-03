@@ -1,4 +1,4 @@
-const menuIcon = document.querySelector(".header-items-1");
+const menuIcons = document.querySelectorAll(".header-items-1");
 
 const navBar = document.querySelector(".toggle-menu");
 const prew = document.querySelector(".back");
@@ -11,13 +11,15 @@ let nthOfImage = 1;
 let imageUrl = `../design/Image${nthOfImage}.jpg`;
 console.log(imageUrl);
 
-menuIcon.addEventListener("click", () => {
-  toggleMenu = !toggleMenu;
-  if (toggleMenu === true) {
-    navBar.classList.toggle("active");
-  } else {
-    navBar.classList.remove("active");
-  }
+menuIcons.forEach((menuIcon) => {
+  menuIcon.addEventListener("click", () => {
+    toggleMenu = !toggleMenu;
+    if (toggleMenu === true) {
+      navBar.classList.toggle("active");
+    } else {
+      navBar.classList.remove("active");
+    }
+  });
 });
 
 next.forEach((item) => {

@@ -148,6 +148,7 @@
   border-radius: 5px;
   border: none;
   height: 308px;
+  background-color: #ffffff;
 }
 #trends .card img {
   height: 50%;
@@ -296,7 +297,6 @@
   background-color: #f6f8f9;
   max-width: 327px;
   min-height: 180px;
-  margin-bottom: 60px;
   border: none;
   border-radius: 5px;
   margin: 0 auto;
@@ -307,16 +307,19 @@
 .card-div .card p {
   font-weight: 600;
   position: relative;
-  top: -15px;
+  top: -10px;
+  font-size: 15px;
 }
 .card-div .card span {
-  font-size: 12px;
+  font-size: 11px;
   color: #a6adb4;
   position: relative;
-  top: -25px;
+  top: -10px;
 }
 .card-div .card span img {
   margin-right: 10px;
+  position: relative;
+  top: 4px;
 }
 
 header {
@@ -346,7 +349,7 @@ header .active {
 }
 header nav {
   position: fixed;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.6s ease-in-out;
   transform: translateX(-120%);
   top: 0;
   left: 0;
@@ -357,14 +360,19 @@ header nav {
   padding: 38px 40px;
   box-shadow: 5px 0px 40px 5px rgba(122, 120, 120, 0.518);
 }
-header nav div {
+header nav div.header-items-1 {
   display: flex;
   justify-content: space-between;
+  padding-left: 0;
 }
-header nav div p {
+header nav div.header-items-1 p {
   color: #fa6980;
   font-family: "Noto Sans", sans-serif;
   font-weight: 600;
+}
+header nav div.header-items-1 .close-menu {
+  opacity: 0.6;
+  height: 18px;
 }
 header nav ul {
   list-style: none;
