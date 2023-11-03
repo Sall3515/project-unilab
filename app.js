@@ -14,7 +14,7 @@ console.log(imageUrl);
 menuIcon.addEventListener("click", () => {
   toggleMenu = !toggleMenu;
   if (toggleMenu === true) {
-    navBar.classList.add("active");
+    navBar.classList.toggle("active");
   } else {
     navBar.classList.remove("active");
   }
