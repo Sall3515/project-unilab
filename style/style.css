@@ -182,6 +182,97 @@
   display: none;
 }
 
+#news {
+  height: 1586px;
+  background-color: #f6f8f9;
+}
+#news div.more-news2 {
+  display: flex;
+  justify-content: space-between;
+  max-height: 60px;
+  border-bottom: 2px solid #f6f8f9;
+  width: 100%;
+  margin-bottom: 40px;
+  padding-top: 20px;
+  padding: 0 24px;
+}
+#news div.more-news2 div svg {
+  fill: rgba(151, 151, 160, 0.5960784314);
+}
+#news div.more-news2 div svg:hover,
+#news div.more-news2 div svg:focus {
+  transition: 0.2s ease-in;
+  cursor: pointer;
+  fill: black;
+}
+#news div.more-news2 div svg:nth-of-type(2) {
+  transform: rotate(180deg);
+  margin-left: 32px;
+}
+#news div.more-news2 h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  width: fit-content;
+}
+#news .news-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+#news .news-container .news-container-item {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 327px;
+  position: relative;
+  margin-bottom: 40px;
+}
+#news .news-container .news-container-item:nth-of-type(1) {
+  margin-top: 110px;
+}
+#news .news-container .news-container-item img {
+  width: 100%;
+  height: 320px;
+}
+#news .news-container .news-container-item div {
+  font-family: "Noto Sans", sans-serif;
+  padding: 0 24px;
+  position: absolute;
+  top: 20px;
+  color: #ffffff;
+}
+#news .news-container .news-container-item div h3 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+#news .news-container .news-container-item div h2 {
+  font-size: 18px;
+  width: 100%;
+  height: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: wrap;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: max-width 0.2s;
+}
+#news .news-container .news-container-item div h2:hover, #news .news-container .news-container-item div h2:focus {
+  max-width: none;
+  height: fit-content;
+}
+#news .news-container .news-container-item div p {
+  font-size: 14px;
+  font-weight: 400;
+  width: 100%;
+}
+#news .news-container .news-container-item div span {
+  font-size: 13px;
+  color: #f6f8f9;
+}
+
 header {
   display: flex;
   justify-content: space-between;
