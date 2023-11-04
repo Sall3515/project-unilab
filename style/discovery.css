@@ -50,4 +50,81 @@
   margin-bottom: 25px;
 }
 
+.form {
+  width: 100%;
+  height: 326px;
+  margin-bottom: 41px;
+}
+.form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 36px 24px;
+}
+.form form select,
+.form form input {
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid #ebeded;
+  margin-bottom: 37px;
+  padding: 5px;
+}
+.form form option:nth-of-type(1) {
+  color: #ebeded;
+}
+.form label {
+  font-size: 13px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.form button {
+  padding: 14px 39px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #fa6980;
+  border: none;
+  border-radius: 6px;
+  transition: 0.2s ease-in;
+  width: 161px;
+}
+.form button:hover {
+  background-color: #ff4d4d;
+}
+
+#discovery-articles {
+  background-color: #f6f8f9;
+  padding: 24px;
+  max-width: 100%;
+}
+#discovery-articles div {
+  margin-top: 30px;
+  padding: 40px 0;
+  border-top: 2px solid #ebeded;
+}
+#discovery-articles div img {
+  margin-bottom: 24px;
+}
+#discovery-articles div img[alt=elephant] {
+  min-width: 250px;
+  width: 100%;
+}
+#discovery-articles div h2 {
+  margin-bottom: 40px;
+}
+#discovery-articles div p {
+  font-size: 14px;
+  color: #a6adb4;
+  line-height: 30px;
+}
+#discovery-articles div:nth-of-type(2) {
+  border-bottom: 2px solid #ebeded;
+  margin-top: 10px;
+}
+#discovery-articles .pagination {
+  margin: 0 auto;
+  padding: 20px;
+  width: 80%;
+}
+
 /*# sourceMappingURL=discovery.css.map */
