@@ -546,6 +546,11 @@ header nav .footer .footer-icons {
   width: 80%;
 }
 
+div {
+  height: 20px;
+  display: block;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
