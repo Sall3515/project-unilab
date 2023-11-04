@@ -1,0 +1,54 @@
+@use "variables";
+
+#discovery-header {
+  min-height: 44px;
+
+  display: flex;
+  img {
+    padding: 15px;
+    cursor: pointer;
+    opacity: 0.6;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+.discovery-hero {
+  width: 100%;
+  max-height: 750px;
+  position: relative;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  div {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    color: variables.$white;
+    font-family: variables.$font;
+    width: 80%;
+    padding: 91px 24px;
+    img {
+      width: 35px;
+    }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 25px;
+    }
+    p {
+      margin-bottom: 10%;
+    }
+    .red-line {
+      height: 0;
+      border-bottom: 3px solid variables.$light-pink;
+      width: 50px;
+      margin: 0 auto;
+      margin-bottom: 25px;
+    }
+  }
+}
