@@ -76,3 +76,26 @@
     display: none;
   }
 }
+
+@media (min-width: 470px) and (max-width: 1024px) {
+  #trends {
+    min-height: 470px;
+    padding: 0;
+    .heading {
+      padding: 0 80px;
+      padding-top: 39px;
+    }
+    .cards {
+      padding: 40px 50px;
+      display: flex;
+      justify-content: center;
+      .card {
+        max-width: 350px;
+        height: 350px;
+        &:nth-of-type(1) {
+          margin-right: 40px;
+        }
+      }
+    }
+  }
+}

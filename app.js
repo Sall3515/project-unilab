@@ -35,44 +35,16 @@ next.forEach((item) => {
   });
 });
 
-const displayDataButton = document.getElementById("button");
-console.log(displayDataButton);
-displayDataButton.addEventListener("click", fetchData);
+const popUpButton = document.getElementById("popup");
+const openPopUp = document.querySelector(".open-popup");
+const overlay = document.querySelector(".overlay");
 
-function fetchData() {
-  fetch("https://jsonplaceholder.typicode.com/posts")
-    .then((res) => {
-      if (!res.ok) {
-        console.log("Error");
-      } else {
-        return res.json();
-      }
-    })
-    .then((apiData) => {
-      myData(apiData);
-    })
-    .catch((error) => {
-      console.error("Error: ", error);
-    });
-}
+openPopUp.addEventListener("click", () => {
+  document.getElementById("popup").style.display = "block";
+  overlay.style.display = "block";
+});
 
-function myData(apiData) {
-  const container = document.getElementById("data");
-  apiData.forEach((data) => {
-    const divElement = document.createElement("div");
-    divElement.innerHTML = `
-  <div class="card" id="${data.id}">
-    <div class="card-image-holder">
-        <img class="card-image" src="https://source.unsplash.com/300x225/?beach" alt="beach" />
-    </div>
-    <div class="card-title" >
-        <h2>
-            ${data.title}
-        </h2>
-        <p>${data.body}</p>
-    </div>
-
-  </div> `;
-    container.appendChild(divElement);
-  });
+function closePopUp() {
+  document.getElementById("popup").style.display = "none";
+  overlay.style.display = "none";
 }

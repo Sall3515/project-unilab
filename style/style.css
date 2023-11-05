@@ -4,6 +4,9 @@ header {
   justify-content: space-between;
   height: 44px;
 }
+header .menu-x {
+  display: none;
+}
 header .header-items-1 {
   padding-left: 17px;
   align-self: center;
@@ -93,6 +96,110 @@ header nav .footer .footer-icons {
   display: flex;
   justify-content: space-around;
   padding: 20px;
+}
+
+@media (min-width: 470px) and (max-width: 1024px) {
+  header .toggle-menu {
+    display: none;
+  }
+  header .header-items-3 {
+    display: none;
+  }
+  header .header-items-2 {
+    display: none;
+  }
+  header .header-items-1 {
+    display: none;
+  }
+  header .menu-x {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    display: flex;
+    padding: 0 20px 0 20px;
+    width: 100%;
+    background-color: white;
+  }
+  header .menu-x h1 {
+    font-size: 13px;
+    font-weight: 600;
+    color: #fa6980;
+    padding-top: 17px;
+  }
+  header .menu-x ul {
+    align-self: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    padding-top: 10px;
+    font-size: 13px;
+  }
+  header .menu-x ul li {
+    margin-right: 27px;
+  }
+  header .menu-x ul li img {
+    text-decoration: none;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+  }
+  header .menu-x ul li a {
+    text-decoration: none;
+    color: #202124;
+    font-weight: 600;
+  }
+  header .menu-x ul li a:hover {
+    color: #a6adb4;
+  }
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 21;
+}
+
+#popup {
+  display: none;
+  position: absolute;
+  z-index: 20;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.814);
+  text-align: center;
+  height: 200px;
+  width: 320px;
+  border-radius: 10px;
+}
+#popup .popup-content {
+  height: 100%;
+  padding: 40px;
+}
+#popup .popup-content p {
+  font-size: 15;
+  color: #72acff;
+}
+#popup button {
+  position: relative;
+  top: -70px;
+  padding: 9px 20px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: rgba(76, 119, 150, 0.655);
+  border: none;
+  border-radius: 6px;
+  transition: 0.2s ease-in;
+}
+#popup button:hover {
+  background-color: #ff4d4d;
 }
 
 #hero-section .hero-image {
@@ -212,6 +319,28 @@ header nav .footer .footer-icons {
   margin-bottom: 40px;
 }
 
+@media (min-width: 470px) and (max-width: 1024px) {
+  #hero-section .hero-image img {
+    max-height: 400px;
+  }
+  #hero-section .hero-image .text {
+    padding: 79px 80px;
+  }
+  #hero-section .hero-image .text h2 {
+    margin-bottom: 0;
+  }
+  #hero-section .hero-image .text h1 {
+    max-width: 100%;
+  }
+  #hero-section .content {
+    min-height: 327px;
+    padding: 40px 80px;
+  }
+  #hero-section #articles {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 #trends {
   min-height: 100vh;
   padding: 40px 24px;
@@ -279,6 +408,28 @@ header nav .footer .footer-icons {
   display: none;
 }
 
+@media (min-width: 470px) and (max-width: 1024px) {
+  #trends {
+    min-height: 470px;
+    padding: 0;
+  }
+  #trends .heading {
+    padding: 0 80px;
+    padding-top: 39px;
+  }
+  #trends .cards {
+    padding: 40px 50px;
+    display: flex;
+    justify-content: center;
+  }
+  #trends .cards .card {
+    max-width: 350px;
+    height: 350px;
+  }
+  #trends .cards .card:nth-of-type(1) {
+    margin-right: 40px;
+  }
+}
 #news {
   background-color: #f6f8f9;
   max-height: 1600px;
@@ -418,6 +569,54 @@ header nav .footer .footer-icons {
   top: 4px;
 }
 
+@media (min-width: 470px) and (max-width: 1024px) {
+  #news {
+    padding: 0 80px;
+    margin: 0;
+    min-height: 100vh;
+  }
+  #news .news-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  #news .news-container .news-container-item {
+    max-width: 600px;
+    max-height: 430px;
+  }
+  #news .news-container .news-container-item div {
+    padding: 0 40px;
+  }
+  #news .news-container .news-container-item div h3 {
+    margin-bottom: 150px;
+    font-size: 16px;
+  }
+  #news .news-container .news-container-item div h2 {
+    margin-bottom: 5px;
+  }
+  #news .news-container .news-container-item div p {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  #news .news-container .news-container-item div span {
+    color: #ebeded;
+  }
+  .line {
+    bottom: 150px;
+    margin: 0;
+  }
+  .card-div {
+    display: flex;
+    margin-top: 40px;
+    padding: 0;
+  }
+  .card-div .card:nth-of-type(1) {
+    margin-right: 40px;
+  }
+  .card-div .card-1 {
+    display: none;
+  }
+}
 #discovery-header {
   min-height: 44px;
   display: flex;
