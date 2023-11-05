@@ -52,7 +52,7 @@ header nav div.header-items-1 .close-menu {
   height: 18px;
 }
 header nav ul {
-  padding: 38px 40px;
+  padding: 28px 30px;
   list-style: none;
   margin-top: 87px;
 }
@@ -546,16 +546,67 @@ header nav .footer .footer-icons {
   width: 80%;
 }
 
-div {
-  height: 20px;
-  display: block;
-}
-
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: "Noto Sans", sans-serif;
+}
+
+#api-body {
+  background-color: #ebeded;
+  padding: 0 24px;
+}
+#api-body #api-header {
+  margin: 20px 0;
+}
+#api-body #api-header a {
+  margin-top: 10px;
+}
+#api-body #api-header #button {
+  padding: 7px 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #fa6980;
+  border: none;
+  border-radius: 6px;
+  transition: 0.2s ease-in;
+}
+#api-body #api-header #button:hover {
+  background-color: #ff4d4d;
+}
+#api-body #data div {
+  margin: 0 auto;
+}
+#api-body #data div .card {
+  max-width: 350px;
+  max-height: 500px;
+  background-color: white;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#api-body #data div .card .card-image-holder {
+  text-align: center;
+  padding-top: 20px;
+  max-width: 250px;
+  overflow: hidden;
+}
+#api-body #data div .card .card-title {
+  height: 100%;
+  min-width: 180px;
+  text-align: left;
+  padding: 20px;
+}
+#api-body #data div .card .card-title h2 {
+  font-size: 15px;
+  max-width: 230px;
+  margin: 0 auto;
+}
+#api-body #data div .card .card-title p {
+  max-width: 230px;
+  font-size: 12px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
