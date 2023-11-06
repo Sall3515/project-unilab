@@ -205,3 +205,26 @@
     }
   }
 }
+
+@media (min-width: 1025px) {
+  #hero-section {
+    display: flex;
+    height: 600px;
+    .hero-image {
+      max-width: 860px;
+      .text {
+        padding: 177px 100px 177px 140px;
+      }
+      img {
+        max-height: 600px;
+      }
+    }
+    .content {
+      padding: 100px;
+      width: 600px;
+      #articles {
+        display: block;
+      }
+    }
+  }
+}

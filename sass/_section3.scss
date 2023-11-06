@@ -119,7 +119,6 @@
     background-color: variables.$light-gray;
     max-width: 327px;
     min-height: 180px;
-
     border: none;
     border-radius: 5px;
     margin: 0 auto;
@@ -196,6 +195,59 @@
     }
     .card-1 {
       display: none;
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  #news {
+    padding: 40px 140px;
+    max-height: 1000px;
+    .news-2 {
+      margin: 0;
+      div {
+        margin-right: -40px;
+      }
+    }
+    .line {
+      display: none;
+    }
+    .news-container {
+      display: inline-block;
+      min-width: 540px;
+      max-height: 700px;
+      margin-right: 40px;
+      padding: 0;
+      margin-bottom: 0;
+      .news-container-item {
+        min-width: 100%;
+        top: 0px;
+
+        div {
+          h3 {
+            margin-bottom: 160px;
+          }
+          h2 {
+            margin: 0;
+          }
+          p {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+    .card-div {
+      position: relative;
+      bottom: 711.5px;
+      z-index: 0;
+      left: 320px;
+      transform: none;
+      margin-top: 0px;
+      width: 290px;
+      padding: 0;
+      .card {
+        min-width: 290px;
+      }
     }
   }
 }

@@ -99,3 +99,21 @@
     }
   }
 }
+
+@media (min-width: 1025px) {
+  #trends {
+    padding: 40px 140px 0 140px;
+    min-height: 450px;
+    .cards {
+      display: flex;
+      justify-content: space-between;
+      .card {
+        width: 360px;
+        margin-right: 10px;
+      }
+    }
+    .card-1 {
+      display: block;
+    }
+  }
+}
