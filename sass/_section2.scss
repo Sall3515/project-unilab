@@ -2,13 +2,17 @@
 
 // section N2
 
+@mixin display-1($justify-content: space-between) {
+  display: flex;
+  justify-content: $justify-content;
+}
+
 #trends {
   min-height: 100vh;
   padding: 40px 24px;
   background-color: variables.$light-gray;
   .heading {
-    display: flex;
-    justify-content: space-between;
+    @include display-1;
     height: 20px;
     div {
       // repeats
@@ -53,12 +57,10 @@
         font-size: 13px;
         color: variables.$dark-gray;
         margin-top: 10px;
-        //repeat
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: wrap;
         cursor: pointer;
-
         transition: max-width 0.2s;
         &:hover,
         &:focus {

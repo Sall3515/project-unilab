@@ -1,11 +1,23 @@
 // header
 @use "variables";
 
-header {
+@mixin display-1($justify-content: space-between) {
   display: flex;
-  justify-content: space-between;
-  height: 44px;
+  justify-content: $justify-content;
+}
+@mixin position($position: fixed, $top: 0, $left: 0) {
+  position: $position;
+  top: $top;
+  left: $left;
+}
+@mixin styles-1($width: 100%, $height: 326px) {
+  width: $width;
+  height: $height;
+}
 
+header {
+  @include display-1;
+  height: 44px;
   .menu-x {
     display: none;
   }
@@ -21,7 +33,6 @@ header {
     padding-right: 17px;
     align-self: center;
   }
-
   .menu-icon {
     display: none;
     cursor: pointer;
@@ -32,26 +43,19 @@ header {
   }
 
   nav {
-    position: fixed;
+    @include position;
     overflow: auto;
     transition: transform 0.6s ease-in-out;
     transform: translateX(-120%);
-    top: 0;
-    left: 0;
-
+    @include styles-1($width: 287p, $height: 100vh);
     height: 100vh;
     width: 287px;
     z-index: 3;
     background-color: variables.$light-gray;
-    // padding: 38px 40px;
     box-shadow: 5px 0px 40px 5px rgba(122, 120, 120, 0.518);
-
     div.header-items-1 {
-      display: flex;
-      justify-content: space-between;
-
+      @include display-1;
       padding: 38px 40px;
-
       p {
         color: variables.$light-pink;
         font-family: variables.$font;
@@ -82,10 +86,8 @@ header {
       max-height: 100%;
       width: 287px;
       background-color: variables.$dark-gray;
-
       .footer-links {
         display: flex;
-
         .footer-link-col {
           width: 120px;
           ul {
@@ -104,8 +106,7 @@ header {
         }
       }
       .footer-icons {
-        display: flex;
-        justify-content: space-around;
+        @include display-1($justify-content: space-around);
         padding: 20px;
       }
     }
@@ -146,7 +147,6 @@ header {
 
       h1 {
         font-size: 13px;
-
         font-weight: 600;
         color: variables.$light-pink;
         padding-top: 17px;

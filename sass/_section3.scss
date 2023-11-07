@@ -1,11 +1,20 @@
 @use "variables";
 
+@mixin display-1($justify-content: space-between) {
+  display: flex;
+  justify-content: $justify-content;
+}
+@mixin position($position: fixed, $top: 0, $left: 0) {
+  position: $position;
+  top: $top;
+  left: $left;
+}
+
 #news {
   background-color: variables.$light-gray;
   max-height: 1600px;
   div.news-2 {
-    display: flex;
-    justify-content: space-between;
+    @include display-1;
     max-height: 30px;
     border-bottom: 2px solid variables.$light-gray;
     width: 100%;
@@ -27,7 +36,6 @@
         margin-left: 32px;
       }
     }
-
     h2 {
       font-size: 20px;
       font-weight: 600;
@@ -35,16 +43,12 @@
       width: fit-content;
     }
   }
-
   .news-container {
     padding: 20px;
     display: flex;
     flex-direction: column;
-
     .news-container-item {
-      position: relative;
-      left: 50%;
-      top: 50%;
+      @include position($position: relative, $top: 50%, $left: 50%);
       transform: translate(-50%, -50%);
       max-width: 327px;
       margin-bottom: 40px;
@@ -76,7 +80,6 @@
           white-space: wrap;
           margin-bottom: 30px;
           cursor: pointer;
-
           transition: max-width 0.2s;
           &:hover,
           &:focus {
@@ -109,9 +112,7 @@
 .card-div {
   padding: 24px;
   margin: 0 auto;
-  position: relative;
-  left: 50%;
-  top: 50%;
+  @include position($position: relative, $top: 50%, $left: 50%);
   transform: translate(-50%, -50%);
   margin-top: 250px;
   background-color: variables.$light-gray;
@@ -122,7 +123,6 @@
     border: none;
     border-radius: 5px;
     margin: 0 auto;
-
     img[alt="Avatar"] {
       margin-bottom: 20px;
     }
@@ -132,7 +132,6 @@
       top: -10px;
       font-size: 15px;
     }
-
     span {
       font-size: 11px;
       color: variables.$dark-gray;
@@ -157,7 +156,6 @@
       padding: 20px;
       display: flex;
       flex-direction: column;
-
       .news-container-item {
         max-width: 600px;
         max-height: 430px;
@@ -187,7 +185,6 @@
   }
   .card-div {
     display: flex;
-
     margin-top: 40px;
     padding: 0;
     .card:nth-of-type(1) {

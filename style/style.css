@@ -29,11 +29,13 @@ header .active {
 }
 header nav {
   position: fixed;
+  top: 0;
+  left: 0;
   overflow: auto;
   transition: transform 0.6s ease-in-out;
   transform: translateX(-120%);
-  top: 0;
-  left: 0;
+  width: 287p;
+  height: 100vh;
   height: 100vh;
   width: 287px;
   z-index: 3;
@@ -158,10 +160,10 @@ header nav .footer .footer-icons {
   }
 }
 .overlay {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
+  display: none;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
@@ -169,16 +171,16 @@ header nav .footer .footer-icons {
 }
 
 #popup {
-  display: none;
   position: absolute;
-  z-index: 20;
   top: 50%;
   left: 50%;
+  display: none;
+  z-index: 20;
   transform: translate(-50%, -50%);
   background-color: rgba(255, 255, 255, 0.814);
   text-align: center;
-  height: 200px;
   width: 320px;
+  height: 200px;
   border-radius: 10px;
 }
 #popup .popup-content {
@@ -512,8 +514,8 @@ header nav .footer .footer-icons {
 }
 #news .news-container .news-container-item {
   position: relative;
-  left: 50%;
   top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   max-width: 327px;
   margin-bottom: 40px;
@@ -576,8 +578,8 @@ header nav .footer .footer-icons {
   padding: 24px;
   margin: 0 auto;
   position: relative;
-  left: 50%;
   top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   margin-top: 250px;
   background-color: #f6f8f9;
@@ -732,8 +734,8 @@ header nav .footer .footer-icons {
 }
 .discovery-hero div {
   position: absolute;
-  left: 50%;
   top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: #ffffff;
@@ -752,9 +754,9 @@ header nav .footer .footer-icons {
   margin-bottom: 10%;
 }
 .discovery-hero div .red-line {
+  width: 50px;
   height: 0;
   border-bottom: 3px solid #fa6980;
-  width: 50px;
   margin: 0 auto;
   margin-bottom: 25px;
 }
@@ -766,8 +768,8 @@ header nav .footer .footer-icons {
 }
 .form form {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   padding: 36px 24px;
 }
 .form form select,
@@ -1010,8 +1012,8 @@ header nav .footer .footer-icons {
   padding: 20px;
 }
 #api-body #data div .card .card-title h2 {
-  font-size: 15px;
   max-width: 230px;
+  font-size: 15px;
   margin: 0 auto;
 }
 #api-body #data div .card .card-title p {
