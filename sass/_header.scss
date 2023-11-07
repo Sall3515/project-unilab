@@ -115,6 +115,13 @@ header {
 // design  for tablet
 @media (min-width: 470px) {
   header {
+    a[alt="arrow-back"] {
+      display: none;
+    }
+    img[alt="filter-icon"] {
+      display: none;
+    }
+
     .toggle-menu {
       display: none;
     }
@@ -152,18 +159,13 @@ header {
         list-style: none;
         width: 100%;
         padding-top: 10px;
-
         font-size: 13px;
-
+        img {
+          padding: 0;
+        }
         li {
           margin-right: 27px;
 
-          img {
-            text-decoration: none;
-            height: 30px;
-            width: 30px;
-            cursor: pointer;
-          }
           a {
             text-decoration: none;
             color: variables.$black;

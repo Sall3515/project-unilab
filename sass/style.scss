@@ -77,17 +77,25 @@
 
 @media (min-width: 470px) {
   #footer-x {
-    display: block;
-    min-height: 316px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 200px;
     background-color: variables.$dark-gray;
     padding: 54px 80px;
     div {
       display: flex;
       flex-direction: row;
+      max-width: 372px;
       justify-content: space-between;
       height: 86px;
-      margin-bottom: 50px;
+      margin-bottom: 6px;
       .footer-x-items {
+        align-self: center;
+        margin-bottom: 40px;
+        margin-top: 15px;
+
         h1 {
           max-width: 289px;
           font-size: 13px;
@@ -99,6 +107,7 @@
           list-style: none;
           font-family: variables.$font;
           text-align: left;
+
           a {
             text-decoration: none;
             color: variables.$light-cream;
@@ -113,6 +122,7 @@
       max-width: 286px;
       display: block;
       max-height: 50px;
+
       position: relative;
       button {
         position: absolute;
@@ -149,16 +159,37 @@
       }
     }
     .footer-x-icons {
-      position: relative;
-      top: -35px;
-      left: 80%;
       width: 120px;
       height: 20px;
-      margin: 0;
+      position: static;
+      padding-top: 40px;
       img {
         height: 16px;
         margin-left: 13.5px;
       }
     }
+  }
+  #api-header {
+    button {
+      padding: 7px 10px;
+      font-size: 13px;
+      font-weight: 600;
+      color: variables.$white;
+      background-color: variables.$light-pink;
+      border: none;
+      border-radius: 6px;
+      transition: 0.2s ease-in;
+
+      &:hover {
+        background-color: variables.$light-red;
+      }
+    }
+  }
+  #data {
+    padding: 40px 140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
   }
 }

@@ -2,7 +2,6 @@
 
 #discovery-header {
   min-height: 44px;
-
   display: flex;
   img {
     padding: 15px;
@@ -17,17 +16,17 @@
   width: 100%;
   max-height: 750px;
   position: relative;
+  // display: flex;
+  // flex-direction: column;
   img {
     width: 100%;
     height: 100%;
   }
   div {
     position: absolute;
-
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-
     text-align: center;
     color: variables.$white;
     font-family: variables.$font;
@@ -141,9 +140,7 @@
       margin-right: 10px;
     }
   }
-  section {
-    // padding: 0px 80px;
-  }
+
   .title-container {
     padding: 22px 80px;
     display: flex;
@@ -190,6 +187,70 @@
       max-width: 233px;
       display: flex;
       justify-content: center;
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  body {
+    background-color: variables.$light-gray;
+  }
+  .title-container {
+    padding: 42px 140px;
+    display: flex;
+    justify-content: space-between;
+
+    div.filter {
+      text-align: right;
+      border-radius: 4px;
+      border: 1px solid rgba(212, 209, 209, 0.747);
+      img {
+        height: 16px;
+        margin: 12px;
+      }
+    }
+    div {
+      display: flex;
+      img {
+        height: 16px;
+        margin-right: 30px;
+      }
+      p {
+        font-size: 11px;
+        margin-right: 19px;
+      }
+      span {
+        margin-right: 19px;
+        font-size: 11px;
+      }
+    }
+  }
+  #search-container {
+    margin: 0 140px;
+    display: flex;
+    background-color: variables.$white;
+    .form {
+      align-self: center;
+      form {
+        width: 360px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  #discovery-articles {
+    min-height: 1100px;
+    padding: 0 140px;
+    display: flex;
+    flex-direction: column;
+    div.el {
+      display: block;
+      p {
+        width: 75%;
+      }
+    }
+    .pagination {
+      display: none;
     }
   }
 }
