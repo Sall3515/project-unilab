@@ -8,7 +8,7 @@ const slider = document.getElementById("slider");
 let toggleMenu = false;
 
 let nthOfImage = 1;
-let imageUrl = `../design/Image${nthOfImage}.jpg`;
+let imageUrl = `./design/Image${nthOfImage}.jpg`;
 console.log(imageUrl);
 
 menuIcons.forEach((menuIcon) => {
