@@ -26,7 +26,7 @@ next.forEach((item) => {
   item.addEventListener("click", () => {
     if (nthOfImage < 3) {
       nthOfImage++;
-      let imageUrl = `../design/Image${nthOfImage}.jpg`;
+      let imageUrl = `./design/Image${nthOfImage}.jpg`;
       slider.setAttribute("src", imageUrl);
       console.log(imageUrl);
     } else {
