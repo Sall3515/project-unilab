@@ -255,4 +255,18 @@
       display: none;
     }
   }
+  #footer-x {
+    div {
+      width: 378px;
+      h1 {
+        margin-right: 20px;
+      }
+      ul {
+        margin-right: 64px;
+        &:nth-of-type(3) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
 }

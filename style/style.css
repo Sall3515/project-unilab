@@ -954,6 +954,18 @@ header nav .footer .footer-icons {
   #discovery-articles .pagination {
     display: none;
   }
+  #footer-x div {
+    width: 378px;
+  }
+  #footer-x div h1 {
+    margin-right: 20px;
+  }
+  #footer-x div ul {
+    margin-right: 64px;
+  }
+  #footer-x div ul:nth-of-type(3) {
+    margin-right: 0;
+  }
 }
 * {
   box-sizing: border-box;
